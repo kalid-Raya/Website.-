@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Dictionary</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="6.jpg" alt="Dictionary Logo">
+            <h1>My English Dictionary</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Enter a word...">
+                <button id="search-button"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="results-container">
+                <h2 id="word-title"></h2>
+                <p id="phonetic"></p>
+                <button id="play-button"><i class="fas fa-volume-up"></i></button>
+                <audio id="audio" src=""></audio>
+
+                <div id="meanings">
+                    <!-- Definitions and examples will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My English Dictionary</p>
+    </footer>
+
+    <script src="sr.js"></script>
+</body>
+</html>
